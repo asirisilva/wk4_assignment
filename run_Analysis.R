@@ -60,6 +60,6 @@ tidydataset = rename(tidydataset, subject_id = Group.1, activity_name = Group.2)
 
 #write the tidy dataset to csv
 write.csv(tidydataset, file = "tidydataset.csv", row.names=FALSE)
-
+write.table(tidydataset, file = "tidydataset.txt", row.names=FALSE)
 
 
